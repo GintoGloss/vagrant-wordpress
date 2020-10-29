@@ -23,5 +23,5 @@ services.
 
 ## Config
 
-Some settings can be adjusted in vars/default.yml file (Not fully implemented yet, some hardcode stil persists)
-Main Playbook.yml is used to assign roles to VM groups.
+Some settings can be adjusted in `vars/default.yml` file (Not fully implemented yet, some hardcode stil persists)
+Main `Playbook.yml` is used to assign roles to VM groups.
