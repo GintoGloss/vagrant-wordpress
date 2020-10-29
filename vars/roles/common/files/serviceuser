@@ -1,1 +1,0 @@
-serviceuser ALL= NOPASSWD: /bin/systemctl
