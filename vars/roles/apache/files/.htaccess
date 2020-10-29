@@ -1,0 +1,8 @@
+AuthName "restricted"
+AuthType Basic
+AuthBasicProvider ldap
+AuthLDAPURL ldap://ldap.forumsys.com/dc=example,dc=com
+AuthLDAPBindDN cn=read-only-admin,dc=example,dc=com
+AuthLDAPBindPassword password
+Require valid-user
+

@@ -1,0 +1,15 @@
+---
+#System Settings
+php_modules: [ 'php-curl', 'php-gd', 'php-mbstring', 'php-xml', 'php-xmlrpc', 'php-soap', 'php-intl', 'php-zip' ]
+
+#MySQL Settings
+mysql_bind_address: "172.29.1.10"
+mysql_root_password: "toor"
+mysql_db: "wordpress"
+mysql_user: "wp_user"
+mysql_password: "pass"
+
+#HTTP Settings
+http_host: "domain"
+http_conf: "domain.conf"
+http_port: "80"

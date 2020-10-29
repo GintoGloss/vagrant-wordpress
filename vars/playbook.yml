@@ -1,0 +1,20 @@
+---
+- hosts: all
+  vars_files:
+    - vars/default.yml
+  roles:
+  - common
+
+- hosts: DbServer
+  vars_files:
+    - vars/default.yml
+  roles:
+  - mysql
+
+- hosts: WebServer
+  vars_files:
+    - vars/default.yml
+  roles:
+  - apache
+  - wordpress
+
