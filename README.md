@@ -15,7 +15,7 @@ The access to the website is protected by [Online LDAP Test Server](https://www.
 Go to vagrant-wordpress dir and run `vagrant up` to create and provision virtual machines.
 Then, open http://172.29.1.10 (or http://127.0.0.1:8081) via browser on the host machine and provide valid credentials.
 
-All required software for running the website is being installed on VMs
+All software required for running the website is being installed on VMs
 dependently on their roles. There are 4 Ansible roles, currently:
 
 - mysql for MySQL Server
