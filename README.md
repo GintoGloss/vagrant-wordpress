@@ -12,16 +12,24 @@ The access to the website is protected by [Online LDAP Test Server](https://www.
 
 ## Usage
 
-Run `vagrant up` to create and provision virtual machines.
+Go to vagrant-wordpress dir and run `vagrant up` to create and provision virtual machines.
 Then, open http://172.29.1.10 (or http://127.0.0.1:8081) via browser on the host machine and provide valid credentials.
 
 All required software for running the website is being installed on VMs
-dependently on theirs roles (There are 4, currently)
+dependently on their roles. There are 4 Ansible roles, currently:
+
+- mysql for MySQL Server
+- apache for Apache2 Web Server + PHP
+- wordpress for WordPress CMS
+- common for some role-independent settings
 
 The user ‘serviceuser’ will be created on both VMs with ‘sudo’ permissions allowing to manage
 services.
 
 ## Config
 
-Some settings can be adjusted in `vars/default.yml` file (Not fully implemented yet, some hardcode stil persists)
-Main `Playbook.yml` is used to assign roles to VM groups.
+See `Vagrantfile` to set VMs properties (vm box, ip addresses e.t.c)
+
+Some software settings can be adjusted in `vars/default.yml` file (Not fully implemented yet, some hardcode stil persists)
+
+`Playbook.yml` is used to assign roles to VM groups.
